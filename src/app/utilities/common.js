@@ -1,9 +1,10 @@
-import React from 'react'
-import moment from 'moment'
+import React from 'react';
+import moment from 'moment';
+import Select from 'react-select';
 
-import { exportHeaderRow } from './constants'
+import { exportHeaderRow } from './constants';
 
-import './common.scss'
+import './common.scss';
 
 export const getExportRows = sessions => 
 { 
@@ -72,7 +73,18 @@ export const renderDateField = ({ input, type, label, meta: { active, error, tou
         <input {...input} type={type} className="date-select" />
         {touched && ((error && <span className="error">{error}</span>))}
     </div>
-  );
+);
+
+export const renderMultiSelect = ({input, options}) => (
+  <Select 
+    {...input} 
+    onChange={value => input.onChange(value)} 
+    onBlur={() => input.onBlur(input.value)} 
+    options={options}
+    isMulti
+    className="select-dropdown"
+  />
+)
 
 export const requiredField = value => value ? undefined : 'Required';
 

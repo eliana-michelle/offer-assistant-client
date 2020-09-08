@@ -5,12 +5,11 @@ import { Field, reduxForm, reset } from 'redux-form';
 import { compose } from 'redux';
 
 import Loader from 'react-loader-spinner';
-import Select from 'react-select';
 
 import { getSessionsToExport } from '../../actions/exportActions';
 
 import { officeOptions, statusOptions } from '../../utilities/constants';
-import { renderDateField } from '../../utilities/common';
+import { renderDateField, renderMultiSelect } from '../../utilities/common';
 
 import './DownloadModal.scss'
 
@@ -59,22 +58,22 @@ const DownloadModal = ({
                     <div className="download-filter-div">
                         <Field
                             name="office"
-                            component={Select}
-                            isMulti={true}
+                            component={renderMultiSelect}
+                            isMulti
                             options={officeOptions}
                             label='Office'
                         />
                         <Field
                             name="offerCode"
-                            component={Select}
-                            isMulti={true}
+                            component={renderMultiSelect}
+                            isMulti
                             options={offerOptions}
                             label='Offer Code'
                         />
                         <Field
                             name="cancelStatus"
-                            component={Select}
-                            isMulti={true}
+                            component={renderMultiSelect}
+                            isMulti
                             options={statusOptions}
                             label='Offer Status'
                         />
