@@ -1,7 +1,7 @@
 export const SESSION_REFUND_TYPE = {
     REFUND: 'Refund', 
-    VOUCHER_CONFIRMED: 'Voucher - Opted',
-    VOUCHER_OPTED: 'Voucher - Confirmed',
+    VOUCHER_CONFIRMED: 'Voucher - Confirmed',
+    VOUCHER_OPTED: 'Voucher - Opted',
 }
 
 export const exportHeaderRow = [
