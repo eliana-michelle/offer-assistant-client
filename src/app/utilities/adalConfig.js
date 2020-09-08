@@ -17,7 +17,7 @@ export const getUser = () => {
     const token = jwt.decode(getToken());
     let isAdmin, isSupervisor, isExec
 
-    const name = token.unique_name;
+    const name = token.name;
     if(token.roles){
       isAdmin = token.roles.includes('Admin')
       isSupervisor = token.roles.includes('Supervisor')
