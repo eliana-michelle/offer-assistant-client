@@ -20,7 +20,7 @@ const TransactionModal = ({id, modalIsOpen, hideModal, history}) => {
                 {history.length > 0 ?
                     <div>
                     {history.map(entry => 
-                    <div key={entry.id} className="history-div">
+                    <div key={entry.ID} className="history-div">
                         <div className="history-header">
                             <span>Updated by {entry.username} at {convertToPTC(entry.updated_at)}</span>
                         </div>

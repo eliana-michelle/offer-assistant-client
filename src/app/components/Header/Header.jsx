@@ -13,9 +13,6 @@ const Header = ({user}) => {
             { user.isSupervisor && <Export /> }
             { user.isAdmin && <Export /> }
             <div>
-                <img src={FaCamera} alt="" className="logo"/>
-            </div>
-            <div>
                 <button className="logout" onClick={() => userLogout()}>LOGOUT</button>
             </div>
         </div>
