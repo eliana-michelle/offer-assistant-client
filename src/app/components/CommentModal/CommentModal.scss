@@ -1,0 +1,37 @@
+.modal-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .comment-input {
+        width: 600px;
+        height: 30px;
+        border: 1px black solid;
+        border-radius: 4px;
+    }
+
+    .comment-div {
+        border: 1px solid black;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+
+        .comment-header {
+            background-color: gray;
+        }
+    }
+
+    .btn {
+        font-size: 15px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px black solid;
+        border-radius: 4px;
+        width: 200px;
+    }
+
+    .confirm {
+        background-color: green;
+    }
+}

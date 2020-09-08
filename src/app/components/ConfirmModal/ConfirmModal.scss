@@ -1,0 +1,26 @@
+.modal-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+        font-size: 15px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px black solid;
+        border-radius: 4px;
+        width: 200px;
+    }
+
+    .confirm {
+        background-color: green;
+    }
+
+    .comment {
+        width: 600px;
+        height: 30px;
+        border: 1px black solid;
+        border-radius: 4px;
+    }
+}

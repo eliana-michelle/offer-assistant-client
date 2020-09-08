@@ -1,0 +1,23 @@
+.date-div {
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-size: 12px;
+}
+
+.date-label {
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+}
+
+.date-select {
+    font-size: 12px;
+    margin: 0px 15px 10px;
+    padding: 10px;
+    width: auto;
+    color: gray;
+    border-radius: 4px;
+  }

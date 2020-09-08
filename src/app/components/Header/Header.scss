@@ -1,0 +1,23 @@
+.header-container {
+    background-color: blue;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+    .logout {
+        background-color: transparent; 
+        border: none;
+        color: white;
+        font-size: 15px;
+    }
+}

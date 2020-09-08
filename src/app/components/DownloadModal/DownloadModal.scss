@@ -1,0 +1,69 @@
+
+//remove inside of arrows button
+
+input[type='date']::-webkit-inner-spin-button {
+    display: none;
+}
+
+//remove outside of arrows button
+input[type='date']::-webkit-outside-spin-button {
+    display: none;
+}
+
+.modal-div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+.download-form {
+    width: 100%;
+
+    .download-filter-div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .btn-div {
+        display: flex;
+        justify-content: center;
+
+        .submit {
+            background-color: red;
+            color: white;
+        }
+    }
+}
+
+.found {
+    
+    p {
+        text-align: center;
+    }
+
+    .checkbox-div {
+        display: flex;
+        justify-content: center;
+
+        .checkbox-label {
+            font-size: 13px;
+
+            .checkbox-input {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .search-btn {
+        background-color: blue;
+        color: white;
+        width: 500px;
+        border-radius: 4px;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+
+    }
+    }
+}

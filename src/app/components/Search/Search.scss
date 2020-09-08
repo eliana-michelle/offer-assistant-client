@@ -1,0 +1,28 @@
+.search-container {
+    margin-top: 50px;
+
+    .search-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .search-input {
+            width: 500px;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+
+        .submit-btn {
+            background-color: red;
+            color:white;
+            font-size: 15px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px black solid;
+            border-radius: 4px;
+            width: 200px;
+        }
+    }
+}
