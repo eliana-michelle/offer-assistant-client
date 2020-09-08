@@ -58,7 +58,7 @@ class SessionInfo extends Component {
                     modalIsOpen={modalIsOpen}
                     handleUpdate={handleUpdate}
                     updateStatus={this.state.updateStatus}
-                    session={session.id}
+                    session={session.invoice}
                     user={user}
                 />
                 <CommentModal 
@@ -75,7 +75,7 @@ class SessionInfo extends Component {
                     history={history}
                 />
                 <div className="session-info-card">
-                    <h2>Session Id: {session.id}</h2>
+                    <h2>Session Id: {session.invoice}</h2>
                     <h3>Current Status: {session.cancel_status}</h3>
                     <h4>Last Update: {session.username ? `${session.username} -- ${convertToPTC(session.updated_at)}` : 'Not Updated Yet'}</h4>
                   
