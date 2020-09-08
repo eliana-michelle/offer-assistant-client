@@ -31,7 +31,7 @@ const validateSessionSuccess = response => {
     const sessionComments = sortDataByCreatedAt(response.data.comments)
     const sessionHistory = sortDataByUpdatedAt(response.data.history)
     
-    if(foundSession.cancel_status === null || foundSession.cancel_status === 'Future Cruise Voucher'){
+    if(foundSession.cancel_status === null){
         foundSession.cancel_status = SESSION_REFUND_TYPE.VOUCHER_OPTED
     }
 

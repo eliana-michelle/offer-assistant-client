@@ -139,22 +139,22 @@ class SessionInfo extends Component {
                         <div className="btn-div">
                             { user.isSupervisor || user.isAdmin ?
                                 <div>
-                                    <button onClick={() => this.openModal(SESSION_REFUND_TYPE.VOUCHER_CONFIRMED)} className="btn voucher">Future Cruise Voucher - Confirmed</button>
-                                    <button onClick={() => this.openModal(SESSION_REFUND_TYPE.VOUCHER_OPTED)} className="btn voucher-opted">Future Cruise Voucher - Opted</button>
+                                    <button onClick={() => this.openModal(SESSION_REFUND_TYPE.VOUCHER_CONFIRMED)} className="btn voucher">Confirm Offer Voucher</button>
+                                    <button onClick={() => this.openModal(SESSION_REFUND_TYPE.VOUCHER_OPTED)} className="btn voucher-opted">Reset Offer Voucher</button>
                                     <button onClick={() => this.openModal(SESSION_REFUND_TYPE.REFUND)} className="btn refund">Refund</button>
                                 </div>
                             : 
                             <div className="btn-div">
                                 { session.cancel_status === SESSION_REFUND_TYPE.VOUCHER_OPTED && 
                                     <div className="btn-div">
-                                        <button onClick={() => this.openModal(SESSION_REFUND_TYPE.VOUCHER_CONFIRMED)} className="btn voucher">Future Cruise Voucher</button> }
+                                        <button onClick={() => this.openModal(SESSION_REFUND_TYPE.VOUCHER_CONFIRMED)} className="btn voucher">Confirm Offer Voucher</button> }
                                         <button onClick={() => this.openModal(SESSION_REFUND_TYPE.REFUND)} className="btn refund">Refund</button>
                                     </div>
                                 }
                                 { session.cancel_status === SESSION_REFUND_TYPE.VOUCHER_CONFIRMED && 
                                 <button onClick={() => this.openModal(SESSION_REFUND_TYPE.REFUND)} className="btn refund">Refund</button>
                                 }
-                                { session.cancel_status === SESSION_REFUND_TYPE.REFUND && <button onClick={() => this.openModal(SESSION_REFUND_TYPE.VOUCHER_CONFIRMED)} className="btn voucher">Future Cruise Voucher</button>}
+                                { session.cancel_status === SESSION_REFUND_TYPE.REFUND && <button onClick={() => this.openModal(SESSION_REFUND_TYPE.VOUCHER_CONFIRMED)} className="btn voucher">Confirm Offer Voucher</button>}
                             </div>
                             }
                         </div>
